@@ -127,10 +127,17 @@ onValue(shoppingListInDB, (snapshot) => {
 
     lisTs.innerHTML = "";
 
-    // If the database is empty
-    if (!snapshot.exists()) {
-        return;
-    }
+  if (!snapshot.exists()) {
+
+    lisTs.innerHTML = `
+        <div class="empty-state">
+            No Remaining items
+        </div>
+    `;
+
+
+    return;
+}
 
     const itemsArray = Object.entries(snapshot.val());
 
