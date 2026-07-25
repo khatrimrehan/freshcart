@@ -399,11 +399,11 @@ nav {
     right: 0;
     bottom: 0;
 
-    height: 74px;
+    height: 68px;
     background: #fff;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     box-shadow: 0 -4px 20px rgba(0, 0, 0, .08);
@@ -430,12 +430,12 @@ nav a i {
 nav a.active {
 
     width: 62px;
-    height: 62px;
-    border-radius: 50%;
+    height: 52px;
+    border-radius: 20px;
     background: #00756c;
     color: #fff;
     justify-content: center;
-    margin-top: -28px;
+    /* margin-top: -28px; */
 
 }
 
